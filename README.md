@@ -1,2 +1,2 @@
-Lotus Forums
-placeholder README
+# Lotus Forum
+### Created by Sam Sanft and James Youngblood
