@@ -1,6 +1,8 @@
 import React from 'react';
 
-import threads from '../data/threads'
+import threads from '../data/threads';
+
+import '../style/board.css'
 
 class Board extends React.Component {
     render() {
@@ -13,16 +15,16 @@ class Board extends React.Component {
                 var time = new Date(post.time)
 
                 posts.push(
-                    <div>
-                        <p>{post.text}</p>
-                        <p>{post.author} {time.toLocaleString()}</p>
+                    <div id="post-cont">
+                        <p id="post">{post.text}</p>
+                        <p id="small">{post.author} {time.toLocaleString()}</p>
                     </div>
                 )
             })
 
             thr.push(
                 <div>
-                    <h3>{thread._id}</h3>
+                    <p id="thread">{thread._id}</p>
                     {posts}
                 </div>
             )
